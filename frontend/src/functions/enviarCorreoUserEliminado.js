@@ -7,7 +7,7 @@ export const enviarCorreoUserEliminado = async (email) => {
                 'Content-type': 'application/json',
                 'authorization': localStorage.getItem('token')
             },
-            body: JSON.stringify({ email: "christian.javier.bergero@gmail.com" })
+            body: JSON.stringify({ email: email })
         })
 
         if (response.status === 200) {
